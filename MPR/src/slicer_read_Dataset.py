@@ -35,7 +35,7 @@ v16.SetDataSpacing(3.2, 3.2, 1.5)
 # compositing function is needed to do the compositing along the ray.
 rayCastFunction = vtk.vtkVolumeRayCastCompositeFunction()
 volumeMapper = vtk.vtkVolumeRayCastMapper()
-volumeMapper.SetInput(v16.GetOutput())
+volumeMapper.SetInputData(v16.GetOutput())
 volumeMapper.SetVolumeRayCastFunction(rayCastFunction)
 
 
